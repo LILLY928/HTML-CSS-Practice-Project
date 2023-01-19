@@ -1,0 +1,142 @@
+.header{
+    z-index: 1;
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    background-color: white;
+    height:55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(204, 204, 204);
+}
+.left{
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+.middle{
+    display:flex;
+    align-items: center;
+    flex:1;
+    max-width: 500px;
+    margin-left: 70px;
+    margin-right: 32px;
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:175px;
+    margin: 20px;
+    flex-shrink: 0;
+}
+.hambuerger_icon{
+    margin-left:24px;
+    margin-right: 20px;
+    height: 25px;
+}
+.youtube_icon{
+    height:20px;
+}
+.searchbar{
+    flex:1;
+    padding-left: 10px;
+    height:34px;
+    width:0px;
+    border-radius: 2px;
+    border: 1px solid rgb(204, 204, 204);
+    box-shadow: inset 1px 1px 3px rgba(0,0,0,0.1);
+}
+.searchbar::placeholder{
+    font-family: Roboto, Arial;
+    font-size: 16px;
+}
+.search_button{
+    background-color:rgb(240,240,240) ;
+    margin-left: -2px;
+    width:60px;
+    height:38px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 2px;
+}
+.search_button,
+.voice_search_button,
+.upload_icon_container,
+.app_icon_container,
+.notification_icon_container{
+    cursor: pointer;
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.search_button .tooltip,
+.voice_search_button .tooltip,
+.upload_icon_container .tooltip,
+.app_icon_container .tooltip,
+.notification_icon_container .tooltip{
+    position:absolute;
+    background-color:rgb(81, 81, 81);
+    color: white;
+    font-size: 8px;
+    bottom:-40px;
+    padding: 8px,10px;
+    border-radius: 2px;
+    opacity:0;
+    transition:opacity 0.25s;
+    pointer-events: none;
+    white-space: nowrap;
+
+}
+.search_button:hover .tooltip,
+.voice_search_button:hover .tooltip,
+.upload_icon_container:hover .tooltip,
+.app_icon_container:hover .tooltip,
+.notification_icon_container:hover .tooltip{
+    opacity:1;
+}
+.search_icon{
+    height:23px;
+}
+.voice_search_button{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 38px;
+    border-radius: 38px;
+    border: none;
+    height: 38px;
+}
+.voice_search_icon{
+    height:24px;
+}
+.upload_icon{
+    height: 24px;
+}
+.app_icon{
+    height: 24px;
+}
+.notification_icon{
+    height: 24px;
+}
+.notification_icon_container{
+    position:relative;
+}
+.notificaton_count{
+    position: absolute;
+    right:-5px;
+    top:-2px;
+    background-color: rgb(197, 4, 4);
+    color:white;
+    font-size:10px;
+    padding:2px 5px;
+    padding-bottom:2px;
+
+    border-radius: 10px;
+}
+.my_channel{    
+    height: 38px;
+}

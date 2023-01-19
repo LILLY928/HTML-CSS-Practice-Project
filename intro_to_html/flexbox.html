@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>flexbox practice</title>
+    </head>
+    <body style="padding-bottom: 1000px;"> 
+        <div style="
+        display:flex;
+        flex-direction: row;
+        ">
+            <div style="background-color:aqua">flex but a longer name</div>
+            <div style="background-color:greenyellow">flex
+                <p> this is a paragraph</p>
+            </div>
+        </div>
+
+        <div style="
+        display:flex;
+        flex-direction: row;
+        margin-top: 20px;
+        ">
+            <div style="
+            background-color:aqua;
+            width:50px;
+            ">flex</div>
+            <div style="
+            background-color:greenyellow;
+            flex:1;
+            ">
+            flex</div>
+        </div>
+
+        <div style="
+        display:flex;
+        flex-direction: row;
+        margin-top: 20px;
+        border-width: 1px;
+        border-style: solid;
+        height:50px;
+        align-items: stretch;
+        ">
+            <div style="
+            background-color:aqua;
+            width:100px;
+            ">flex</div>
+            <div style="
+            background-color:greenyellow;
+            width:100px;
+            ">
+            flex</div>
+            <div style="
+            background-color:aqua;
+            width:100px;
+            ">flex</div>
+
+        </div>
+
+        <div style="
+        display:flex;
+        flex-direction: row;
+        margin-top: 20px;
+        border-width: 1px;
+        border-style: solid;
+        justify-content: space-between;
+        ">
+            <div style="
+            background-color:aqua;
+            width:100px;
+            ">flex</div>
+            <div style="
+            background-color:greenyellow;
+            width:100px;
+            ">
+            flex</div>
+            <div style="
+            background-color:aqua;
+            width:100px;
+            ">flex</div>
+
+        </div>
+
+        <div style="
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        ">
+            <div style="
+            background-color:khaki;
+            width:200px;
+            ">200px</div>
+            <div style="
+            background-color:pink;
+            width:75px;
+            ">75px</div>
+        </div>
+
+        <div style="
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        ">
+            <div style="
+            background-color:khaki;
+            width:50px;
+            ">50px</div>
+            <div style="
+            background-color:pink;
+            flex:1;
+            ">free space</div>
+            <div style="
+            background-color:khaki;
+            width:75px;
+            ">75px</div>
+        </div>
+
+        <div style="
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        ">
+            <div style="
+            background-color:khaki;
+            width:50px;
+            ">flex</div>
+            <div style="
+            background-color:pink;
+            width:50px;
+            ">flex</div>
+            <div style="
+            background-color:khaki;
+            width:50px;
+            ">flex</div>
+            <div style="
+            background-color:pink;
+            width:50px;
+            ">flex</div>
+        </div>
+
+        <div style="
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        height:70px;
+        border-width: 1px;
+        border-style: solid;
+        align-items: center;
+        ">
+            <div style="
+            background-color:khaki;
+            width:50px;
+            ">flex</div>
+            <div style="
+            background-color:pink;
+            width:50px;
+            ">flex</div>
+        </div>
+        <div style="
+        display:flex;
+        margin-top:20px;
+        height:70px;
+        ">
+            <div style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: antiquewhite;
+            width:100px;
+            ">
+                <p style="
+                background-color:black;
+                color:white;
+                ">Item1
+                </p>
+            </div>
+            <div style="
+            background-color:cornflowerblue;
+            width:200px;
+            ">
+                
+            </div>
+        </div>
+        <div style="
+        display:flex;
+        margin-top:20px;
+        height:70px;
+        ">
+            <div style="
+            background-color: antiquewhite;
+            width:100px;
+            ">
+            </div>
+            <div style="
+            display: flex;
+            background-color:cornflowerblue;
+            flex-direction: column;
+            width:200px;
+            ">  
+                <div class="row1_box">Row1</div>
+                <div class="row2_box">
+                    <div class="box">Row2</div>
+                    <div class="box">Row2</div>    
+                </div>
+            </div>
+            <style>
+                .row1_box{
+                }
+                .row2_box{
+                    display: flex;
+                    color: white;
+                    margin-top: 0px;
+                    margin-bottom:0px;
+                    justify-content: space-between;
+                }
+                .box{
+                    flex-direction: row;
+                    background-color: black;
+                }
+            </style>
+        </div>
+
+    </body>
+</html>
